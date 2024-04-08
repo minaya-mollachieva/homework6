@@ -48,8 +48,8 @@ public class Main {
         int cashSaving = 0;
         int monthlySaving = 29000;
         for (int i = 1; i <= 12; i++) {
-            cashSaving = cashSaving + cashSaving/100;
             cashSaving = cashSaving + monthlySaving;
+            monthlySaving *=1.01 ;
             System.out.println("Месяц " + i + " Сумма накоплений равно " + cashSaving);
         }
         //Задача 10-Таблица умножения на 2
